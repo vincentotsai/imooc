@@ -1,4 +1,5 @@
-extends ../layout
+extends ../layout.pug
+
 block content
   .container
     .row
@@ -17,7 +18,7 @@ block content
           each item in movies
             tr(class="item-id-#{item._id}")
               td #{item.title}
-              td #{item.doctor}
+              td #{item.director}
               td #{item.country}
               td #{item.year}
               td #{moment(item.meta.updateAt).format('MM/DD/YYYY')}
