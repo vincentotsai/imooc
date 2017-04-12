@@ -7,6 +7,7 @@ app.set('view engine','pug')
 app.listen(port)
 
 console.log('Imooc is running on localhost:'+port)
+// vscode 
 
 // index page
 app.get('/',function(req,res){
